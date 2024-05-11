@@ -11,14 +11,6 @@ html,body{
     --bd-color: #fff;
 }
 
-/* dark theme*/
-body.dark{
-    
-    background-color: var(--bg-color-dark-theme);
-    --text-color: #FFF;
-    --bd-color: #333;
-
-}
 /* Header */
 .header {
     width: 100vw;
@@ -46,6 +38,15 @@ body.dark{
     
     
 }
+
+body.dark{
+    
+    background-color: var(--bg-color-dark-theme);
+    --text-color: #FFF;
+    --bd-color: #333;
+  
+}
+
 #btn-dark{
     color: var(--text-color);
 }
@@ -476,10 +477,10 @@ p{
     opacity: 1;
     transition: all .3s;
 }
-/* .cd-top--is-visible { // back-to-top button visible
+.cd-top--is-visible { // back-to-top button visible
     visibility: visible;
     opacity: 1;
-} */
+}
 
 
 
@@ -495,4 +496,49 @@ p{
         right: 0;
         /* border: 1px solid #000; */
     }
+}
+
+@media screen and (max-width:800px){
+    /* TOOLS  */
+    .tools_top h3{
+        font-size: 40px;
+        line-height: 50px;
+    };
+}
+@media screen and (max-width:667px){
+    /* TOOLS  */
+    .tools_top h3{
+        font-size: 32px;
+        line-height: 42px;
+    };
+}
+@media screen and (max-width:568px){
+    /* CAROUSEL  */
+    .carousel_left h3{
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+@media screen and (max-width:414px){
+    
+}
+
+@media screen and (max-width:376px){
+    
+}
+
+@media screen and (max-width:320px){
+    
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    
+}
+
+@media screen and (min-width:575px) and (max-width:992px) {
+    
+}
+
+@media screen and (min-width:991.98px) and (max-width:1299.98px){
+    
 }
