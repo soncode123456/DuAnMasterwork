@@ -477,7 +477,8 @@ p{
     opacity: 1;
     transition: all .3s;
 }
-.cd-top--is-visible { // back-to-top button visible
+.cd-top--is-visible { 
+    /* // back-to-top button visible */
     visibility: visible;
     opacity: 1;
 }
