@@ -19,75 +19,61 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/dark_theme.css">
     <link rel="stylesheet" href="./css/index.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="dark" id="myBody">
     <!-- HEADER  -->
-    <header class="header">
-      <nav class="navMasterWork navbar navbar-expand-lg py-4 bg-white">
-        <div class="container">
-          <a class="navbar-brand m-0" href="#">
-            <span><i class="fa fa-handshake"></i> Masterwork</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMasterwork" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarMasterwork">
-            <!-- mb-2 mb-lg-0 -->
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Pages
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Blog Pots</a></li>
-                  <li><a class="dropdown-item" href="#">Landing Pages</a></li>
-                  <!-- <li><hr class="dropdown-divider"></li> -->
-                  <li><a class="dropdown-item" href="#">404 Pages</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-            <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-              <div class="search-right me-lg-3">
-                <a href="#search">
-                  <span class="fa fa-search"></span>
-                </a>
-                <div id="search" class="pop-overlay">
-                  <div class="popup">
-                    <form action="http://127.0.0.1:5500/SonDev/Masterwork/index.html#" class="search-box d-sm-flex">
-                      <input type="search" placeholder="Enter Keyword" name="s" required="required" autofocus>
-                      <button type="submit" class="btn">Search</button>
-                    </form>
-                    <a class="close" href="#">x</a>
-                  </div>
+    <header class="header ">
+      <nav class="navbar navbar-expand-lg mx-auto d-flex  justify-content-between px-4 py-3 ">
+            <a class="header_logo navbar-brand fs-3 fw-bold  " href="#">
+              Masterwork
+            </a>
+            
+            <div class="d-flex gap-3 align-items-center menu" >
+              <ul class="navbar-nav  my-2 my-lg-0  fs-6  align-items-center gap-1 " style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Servives</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-disabled="true">Contact</a>
+                </li>
+                <div class="search d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="fa fa-search "></i>
                 </div>
-              </div>
-              <button class="btn btn-outline-dark me-lg-3 mt-lg-0" type="submit">Schedule a Demo</button>
-
-              <!-- MOON & SUN -->
-              <div class="mobile-position DarkandLight">
-                <button class="btn" id="switchButton" title="Click to switch theme">
-                  <i class="far fa-moon"></i>
-                  <i class="far fa-sun"></i>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+                <button class="btn-primary px-4 py-2">schedule a demo</button>
+              </ul>
+             
+              
+              <button class="fs-3 bg-transparent" style="width: 30px;">
+                <i class="fa fa-moon" id="btn-dark"></i>
+              </button>
+              <button class="d-block d-lg-none fs-4 " id="btn-bars">
+                <i class="fa fa-bars" id="icon_menu"></i>
+                
+                <!-- <i class="fa fa-times"></i> -->
+              </button>
+            </div>
+          
       </nav>
-    </header>
+  </header>
 
     <!-- CAROUSEL  -->
     <section class="carousel">
@@ -206,44 +192,8 @@
     <section class="Projects"></section>
     <section class="People"></section>
     <section class="build"></section>
-    <footer class="footer"></footer>
 
-    <!-- MOON & SUN JS  -->
-    <script src="./js/moon.sun.js"></script>
+    <!-- Link js -->
+    <script src="/js/index.js"></script>
 
-    <!-- BACK TO TOP  -->
-    <a href="#" class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-
-    <!-- Thư viện jquery  -->
-    <script
-    src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-    crossorigin="anonymous"></script>
-
-    <!-- jquery waypoints -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- Count UP JS  -->
-    <script src="./js/jquery.countup.min.js"></script>
-
-    <script>
-      $('.counter').countUp({
-        delay: 10,
-            time: 3000
-      });
-
-    </script>
-
-    <!-- Thư viện hỗ trợ -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- BOOTSTRAP JS  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <!-- BACKTOTOP JS  -->
-    <script src="./js/util.js"></script>
-    <script src="./js/main.js"></script>
-</body>
 </html>
