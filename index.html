@@ -24,8 +24,8 @@
 </head>
 <body  id="bodyElement">
     <!-- HEADER  -->
-    <header class="header ">
-      <nav class="navbar navbar-expand-lg mx-auto d-flex  justify-content-between px-4 py-3 ">
+    <header class="header " >
+      <nav class="navbar navbar-expand-lg mx-auto d-flex  justify-content-between px-4 py-3 px-lg-0 ">
             <a class="header_logo navbar-brand fs-3 fw-bold  " href="#">
               Masterwork
             </a>
@@ -45,7 +45,7 @@
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Pages
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu" >
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li><hr class="dropdown-divider"></li>
@@ -58,11 +58,11 @@
                 <div class="search d-flex justify-content-center align-items-center rounded-circle">
                   <i class="fa fa-search "></i>
                 </div>
-                <button class="btn-primary px-4 py-2">schedule a demo</button>
+                <button class="btn-primary px-4 py-2 mb-2">schedule a demo</button>
               </ul>
              
               
-              <button class="fs-3 bg-transparent" style="width: 30px;">
+              <button class="fs-3 bg-transparent" style="border: none; width: 30px;">
                 <i class="fa fa-moon" id="btn-dark"></i>
               </button>
               <button class="d-block d-lg-none fs-4 " id="btn-bars">
@@ -189,7 +189,36 @@
 
     <section class="ourselves"></section>
     <section class="General"></section>
-    <section class="Projects"></section>
+    <section class="Projects">
+      <div class="sliderTab">
+        <ul class="navTabs">
+            <li class="navItem active" data-target="tab1">Tab 1 </li>
+            <li class="navItem" data-target="tab2">Tab 2</li>
+            <li class="navItem" data-target="tab3">Tab 3</li>
+            <div class="bg-active"></div>
+        </ul>
+        <div class="contentTabs">
+            <div class="tab active" id="tab1">
+              <h1>contentTab 1</h1>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facilis atque odio fugiat suscipit corporis consequatur minus, ut voluptatum porro incidunt deleniti accusamus. Sint nam porro exercitationem! Exercitationem molestiae ullam tenetur culpa ex. Distinctio molestiae excepturi numquam tempora ab ad amet harum saepe, vero labore repellendus impedit itaque repellat sunt.
+              </p>
+            </div>
+            <div class="tab" id="tab2">
+              <h1>contentTab 2</h1>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facilis atque odio fugiat suscipit corporis consequatur minus, ut voluptatum porro incidunt deleniti accusamus. Sint nam porro exercitationem! Exercitationem molestiae ullam tenetur culpa ex. Distinctio molestiae excepturi numquam tempora ab ad amet harum saepe, vero labore repellendus impedit itaque repellat sunt.
+              </p>
+            </div>
+            <div class="tab" id="tab3">
+              <h1>contentTab 3</h1>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facilis atque odio fugiat suscipit corporis consequatur minus, ut voluptatum porro incidunt deleniti accusamus. Sint nam porro exercitationem! Exercitationem molestiae ullam tenetur culpa ex. Distinctio molestiae excepturi numquam tempora ab ad amet harum saepe, vero labore repellendus impedit itaque repellat sunt.
+              </p>
+            </div>
+        </div>
+      </div>
+    </section>
     <section class="People"></section>
     <section class="build"></section>
 
@@ -230,6 +259,7 @@
     <!-- BACKTOTOP JS  -->
     <script src="./js/util.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
