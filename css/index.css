@@ -221,6 +221,23 @@ p{
     opacity: 1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* PROJECT */
 /* .navTabs{
     background: linear-gradient(to bottom right, #25aebb,#0ddb9f);
@@ -299,50 +316,7 @@ p{
         margin: 0 !important;
         
         /* border: 1px solid #000; */
-    }
-}
-
-@media screen and (max-width:800px){
-    /* TOOLS  */
-    .tools_top h3{
-        font-size: 40px;
-        line-height: 50px;
     };
 }
-@media screen and (max-width:667px){
-    /* TOOLS  */
-    .tools_top h3{
-        font-size: 32px;
-        line-height: 42px;
-    };
-}
-@media screen and (max-width:568px){
-    /* CAROUSEL  */
-    .carousel_left h3{
-        font-size: 40px;
-        line-height: 45px;
-    }
-}
-@media screen and (max-width:414px){
-    
-}
 
-@media screen and (max-width:376px){
-    
-}
 
-@media screen and (max-width:320px){
-    
-}
-
-@media screen and (min-width:768px) and (max-width:992px) {
-    
-}
-
-@media screen and (min-width:575px) and (max-width:992px) {
-    
-}
-
-@media screen and (min-width:991.98px) and (max-width:1299.98px){
-    
-}
