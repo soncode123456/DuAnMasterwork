@@ -84,39 +84,7 @@ body.dark{
 
 
 
-<<<<<<< HEAD
-=======
-/* BACK TO TOP  */
-.backToTop{
-    width: 50px;
-    height: 45px;
-    background: #dc4f72c4;
-    border: none;
-    outline: none;
-    line-height: 50px;
-    text-align: center;
-    display: block;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    color: white;
-    transition: all .3s;
-    box-shadow: -4px 4px 24px -10px #f55f8d;
-    /* visibility: hidden; */
-    opacity: 0;
-    z-index: 100;
-}
-.backToTop:hover{
-    background: #dc4f72;
-    opacity: 1;
-    transition: all .3s;
-}
-.cd-top--is-visible { 
-    /* // back-to-top button visible */
-    visibility: visible;
-    opacity: 1;
-}
->>>>>>> 5516dbe190d50f1c18d5811b9df07d4d7b6ecb7c
+
 
 
 
@@ -131,50 +99,7 @@ body.dark{
         left: 0;
         right: 0;
         /* border: 1px solid #000; */
-    }
-}
-
-@media screen and (max-width:800px){
-    /* TOOLS  */
-    .tools_top h3{
-        font-size: 40px;
-        line-height: 50px;
     };
 }
-@media screen and (max-width:667px){
-    /* TOOLS  */
-    .tools_top h3{
-        font-size: 32px;
-        line-height: 42px;
-    };
-}
-@media screen and (max-width:568px){
-    /* CAROUSEL  */
-    .carousel_left h3{
-        font-size: 40px;
-        line-height: 45px;
-    }
-}
-@media screen and (max-width:414px){
-    
-}
 
-@media screen and (max-width:376px){
-    
-}
 
-@media screen and (max-width:320px){
-    
-}
-
-@media screen and (min-width:768px) and (max-width:992px) {
-    
-}
-
-@media screen and (min-width:575px) and (max-width:992px) {
-    
-}
-
-@media screen and (min-width:991.98px) and (max-width:1299.98px){
-    
-}

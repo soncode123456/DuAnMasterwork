@@ -221,6 +221,8 @@ input[type="checkbox"] {
     color: #eee;
     line-height: 24px;
 }
+
+
 /* GENERAL */
 .General{
     background-color: #F7F9FC;
@@ -237,6 +239,12 @@ input[type="checkbox"] {
     line-height: 20px;
     color: #dc4f72;
     margin-bottom: 5px;
+}
+.general_title h3{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1;
+    color: #2C3038;
 }
 
 .general_img{
@@ -406,4 +414,71 @@ input[type="checkbox"] {
 .cd-top--is-visible { // back-to-top button visible
     visibility: visible;
     opacity: 1;
+}
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:800px){
+    /* TOOLS  */
+    .tools_top h3{
+        font-size: 40px;
+        line-height: 50px;
+    };  
+    
+}
+@media screen and (max-width:800px){
+    /* GENERAL */
+    .general_title h3{
+        font-size: 40px;
+        line-height: 50px;
+    };
+}
+@media screen and (max-width:667px){
+    /* TOOLS  */
+    .tools_top h3{
+        font-size: 32px;
+        line-height: 42px;
+    }; 
+}
+@media screen and (max-width:667px){
+    /* GENERAL */
+    .general_title h3{
+        font-size: 32px;
+        line-height: 42px;
+    };
+}
+
+@media screen and (max-width:568px){
+    /* CAROUSEL  */
+    .carousel_left h3{
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+}
+@media screen and (max-width:414px){
+    
+}
+
+@media screen and (max-width:376px){
+    
+}
+
+@media screen and (max-width:320px){
+    
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    
+}
+
+@media screen and (min-width:575px) and (max-width:992px) {
+    
+}
+
+@media screen and (min-width:991.98px) and (max-width:1299.98px){
+    
 }
