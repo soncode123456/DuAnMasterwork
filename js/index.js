@@ -24,7 +24,7 @@ btnBars.onclick = () => {
     if(iconMenu.classList.contains('fa-bars')){
         iconMenu.classList.remove('fa-bars');
         iconMenu.classList.add('fa-times');
-        nav.style.maxHeight = "300px"
+        nav.style.maxHeight = "400px"
     }else{
         iconMenu.classList.remove('fa-times');
         iconMenu.classList.add('fa-bars');
@@ -33,3 +33,23 @@ btnBars.onclick = () => {
         
     }
 }
+// Project
+let navTabs = document.querySelectorAll('.sliderTab');
+navTabs.forEach((item) => {
+    console.log(item)
+    item.addEventListener('click',(event) => {
+    if(event.target.classList.contains('navItem')){
+        let lastActive = item.querySelector('li.active');
+        let newActive = event.target;
+        let bgActive = item.querySelector('.bg-active');
+        lastActive.classList.remove('active');
+        newActive.classList.add('active');
+        bgActive.style.left = newActive.offsetLeft + "px";
+
+        let lastContentActive = item.querySelector('.tab.active')
+        let newContentActive = document.getElementById(newActive.dataset.target);
+        lastContentActive.classList.remove('active');
+        newContentActive.classList.add('active');
+    }
+    })
+})
