@@ -4,6 +4,7 @@ html,body{
     box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;
     border: none;
+  
 }
 
 :root{
@@ -160,23 +161,35 @@ p{
     max-width: 1200px;
 }
 
+/* Projects */
+.projects{
+    height: 100vh;
+    width: 100vw;
+}
 
+.heading h6{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.sliderTab .navTabs{
+    list-style: none;
+    color: var(--text-color);
+    display: flex;
+    width: 100%;
+}
+.sliderTab .navTabs .navItem{
+    /* cursor: pointer;
+    margin: 0 auto; */
+    text-align: center;
+    width: calc(100% / 3);
+    border-bottom: 3px solid var(--text-color);
+    font-size: 24px;
 
+}
+.sliderTab .navTabs .navItem.active{
+    border-bottom: 3px solid #d62f58;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 /* BACK TO TOP  */
 .backToTop{
     width: 50px;
@@ -209,7 +222,7 @@ p{
 }
 
 /* PROJECT */
-.navTabs{
+/* .navTabs{
     background: linear-gradient(to bottom right, #25aebb,#0ddb9f);
     padding: 0;
     margin: 50px 0 0;
@@ -264,7 +277,7 @@ p{
 }
 .contentTabs .tab.active{
     display: block;
-}
+} */
 
 
 /* Reponsive */
