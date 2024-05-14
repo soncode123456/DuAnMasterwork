@@ -5,11 +5,36 @@ html,body{
     font-family: "Nunito Sans", sans-serif;
     border: none;
 }
+
 :root{
     --primary-color: #dc4f72;
     --text-color: #5a5a5a;
     --bg-color-dark-theme: #131617;
     --bd-color: #fff;
+}
+
+#btn-dark{
+    color: var(--text-color);
+}
+#btn-bars{
+    color: #fff;
+    background-color: var(--primary-color);
+    width: 30px;
+    border-radius: 3px;
+}
+/* general use  */
+.active{
+    color: var(--primary-color) !important;
+}
+.btn-primary{
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: transparent;
 }
 
 /* Header */
@@ -139,132 +164,18 @@ p{
 
 
 
-/* CAROUSEL */
-.carousel{
-    margin-top: 90px;
-}
-.carousel .content{
-    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../img/banner.jpg);
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    padding-top: 80px;
-}
-.carousel_left h3{
-    font-size: 50px;
-    font-weight: 700;
-    color: #2c3038;
-    line-height: 58px;
-}
-.carousel_left p{
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    max-width: 450px;
-}
 
-/* TOOLS */
-.tools_top{
-    max-width: 750px;
-}
-.tools_top h6{
-    font-size: 16px;
-    font-weight: 700;
-    color: #dc4f72;
-    margin-bottom: 5px;
-}
-.tools_top h3{
-    font-size: 46px;
-    font-weight: 700;
-    color: #2c3038;
-    line-height: 1;
-}
-.tools_top p{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-}
 
-.tools_bottom .tools_item{
-    border-radius: 6px;
-    transition: all .5s;
-    background-color: #f7f9fc;
-    padding: 3rem 2.3rem;
-    border: 1px solid #f7f9fc;
-}
-.tools_bottom .tools_item:hover{
-    background-color: #fff;
-    border: 1px solid #f8f9fa;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
-    transform: translateY(-8px);
-}
-.tools_bottom .tools_item h3{
-    line-height: 35px;
-    color: #2c3038;
-}
-.tools_bottom .tools_item p{
-    line-height: 24px;
-}
 
-/* COMPANY */
-.company{
-    background-color: #F7F9FC;
-}
-.company_left h6{
-    font-size: 16px;
-    font-weight: 700;
-    color: #dc4f72;
-    line-height: 20px;
-    margin-bottom: 5px;
-}
-.company_left h3{
-    font-size: 36px;
-    font-weight: 700;
-    color: #2C3038;
-    line-height: 1.2;
-}
-.company_left p{
-    font-size: 16px;
-    line-height: 1.6;
-}
-.company_right img{
-    border-radius: 6px;
-    transition: all .5s;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-.company_right img:hover{
-    transform: translateY(-8px);
-}
 
-/* NUMBER  */
-.number{
-    background: #F7F9FC;
-}
-.number_content .number_item{
-    background: #fff;
-    border-radius: 6px;
-    box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
-    transition: all .5s;
-    border: 1px solid #f8f9fa;
-}
-.number_content .number_item:hover{
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
-    transition: all .5s;
-}
-.number_item h4{
-    color: #2C3038;
-    line-height: 24px;    
-}
-.number_item p.counter{
-    font-size: 50px;
-    font-weight: 700;
-    color: #dc4f72;
-    margin: 10px 0 15px;
-}
+
+
+
+
+
+
+
+
 
 /* BACK TO TOP  */
 .backToTop{
