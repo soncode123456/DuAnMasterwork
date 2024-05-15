@@ -165,6 +165,7 @@ p{
 .projects{
     height: 100vh;
     width: 100vw;
+    
 }
 
 .heading h6{
@@ -176,19 +177,105 @@ p{
     color: var(--text-color);
     display: flex;
     width: 100%;
+    padding: 0;
 }
 .sliderTab .navTabs .navItem{
     /* cursor: pointer;
     margin: 0 auto; */
     text-align: center;
     width: calc(100% / 3);
-    border-bottom: 3px solid var(--text-color);
+    border-bottom: 4px solid var(--text-color);
     font-size: 24px;
+    font-weight: 700;
+    padding: 5px;
+    transition: 0.5s;
 
 }
 .sliderTab .navTabs .navItem.active{
-    border-bottom: 3px solid #d62f58;
+    border-bottom: 4px solid #d62f58;
 
+}
+
+.textContent h3{
+    font-size: 30px;
+}
+.contentTabs .tab{
+    display: none;
+}
+
+.contentTabs .tab.active{
+        display: flex;
+}
+
+/* People */
+.people .direction{
+    text-align: center;
+}
+.people .direction button{
+    font-weight: bold;
+    background-color: #00000044;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    color: #ffffff;
+    margin: 0 10px;
+}
+.people .direction button:hover{
+    background-color: #000000;
+}
+
+
+.item {
+    border-radius: 15px;
+    width: 300px;
+    height: 500px;
+    background-image: linear-gradient(to top,#aec0ce,#ececf2);
+    overflow: hidden;
+    margin: 10px;
+}
+.item .avatar{
+    display: block;
+    margin: 50px auto 10px;
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px #7d878d;
+
+
+}
+.item .content{
+    padding: 30px;
+
+}
+.item .content table td{
+    padding: 10px 0;
+    border-bottom: 1px solid #aec0ce;
+
+    
+}
+.item .content table td:nth-child(2){
+    text-align: right;
+
+}
+.nameGroup{
+    text-align: center;
+    bottom: none !important;
+}
+
+#list{
+    display: flex;
+    width: max-content;
+}
+#formList{
+    width: 1200px;
+    max-width: 100%;
+    overflow: auto;
+}
+#formList::-webkit-scrollbar{
+    display: none;
 }
 /* BACK TO TOP  */
 .backToTop{
