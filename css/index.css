@@ -3,15 +3,16 @@ html,body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;
-    border: none;
+    
   
 }
 
 :root{
     --primary-color: #dc4f72;
-    --text-color: #5a5a5a;
+    --text-color: #000;
     --bg-color-dark-theme: #131617;
     --bd-color: #fff;
+    --sub-color: #b7b7b7;
 }
 
 #btn-dark{
@@ -165,11 +166,18 @@ p{
 .projects{
     height: 100vh;
     width: 100vw;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .heading h6{
     color: var(--primary-color);
+    cursor: pointer;
+}
+.heading h1{
+    color: var(--text-color);
     cursor: pointer;
 }
 .sliderTab .navTabs{
@@ -202,80 +210,123 @@ p{
 .contentTabs .tab{
     display: none;
 }
+.contentTabs .tab h3{
+    color: var(--text-color);
+}
+
 
 .contentTabs .tab.active{
         display: flex;
 }
 
 /* People */
-.people .direction{
-    text-align: center;
+.people{
+    margin-top: 100px;
+    height: 100vh;
+    background-image: url(/img/b2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
 }
-.people .direction button{
-    font-weight: bold;
-    background-color: #00000044;
-    border: none;
+.people .container{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.people .container .heading {
+    text-align: center;
+    
+}
+.people .container .heading h1{
+    color: var(--text-color);
+    
+}
+
+#formList{
+    width: 1200px;
+    margin-top: 100px;
+    overflow-x: scroll;
+    max-width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+}
+#formList::-webkit-scrollbar{
+    display: none;  
+}
+#list{
+    width: max-content;
+    /* padding: 50px; */
+    display: flex;
+    gap: 15px;
+
+}
+#formList #list .item{
+    width: 580px;
+    display: flex;
+    background-color: var(--bd-color);
+    padding: 30px;
+    scroll-snap-align: start;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#formList #list .item .heroImg img{
+    border: 3px solid var(--primary-color);
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 50%;
+
+}
+#formList #list .item i{
+    color: var(--text-color);
+}
+#formList #list .item .content h5{
+    color: var(--primary-color);
+}
+#formList #list .item .content p,#formList #list .item .content h6{
+    color: var(--text-color);
+}
+#prev,#next{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    transition: 0.5s;
-    color: #ffffff;
     margin: 0 10px;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
-.people .direction button:hover{
-    background-color: #000000;
-}
-
-
-.item {
-    border-radius: 15px;
-    width: 300px;
-    height: 500px;
-    background-image: linear-gradient(to top,#aec0ce,#ececf2);
-    overflow: hidden;
-    margin: 10px;
-}
-.item .avatar{
-    display: block;
-    margin: 50px auto 10px;
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 10px 15px #7d878d;
-
-
-}
-.item .content{
-    padding: 30px;
-
-}
-.item .content table td{
-    padding: 10px 0;
-    border-bottom: 1px solid #aec0ce;
-
-    
-}
-.item .content table td:nth-child(2){
-    text-align: right;
-
-}
-.nameGroup{
+.build {
+    height: 50vh;
+    margin-top: 100px;
     text-align: center;
-    bottom: none !important;
+}
+.build .container h1{
+    font-size: 46px;
+    color: var(--text-color);
+}
+.getStarted{
+    color: #fff ;
+    background-color: var(--primary-color) ;
 }
 
-#list{
-    display: flex;
-    width: max-content;
+/* footer */
+.footer .container .item h4{
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: var(--text-color);
 }
-#formList{
-    width: 1200px;
-    max-width: 100%;
-    overflow: auto;
+.footer .container .item ul{
+    list-style: none;
+    padding: 0;
+    text-align: start;
+    color: var(--text-color);
+
 }
-#formList::-webkit-scrollbar{
-    display: none;
+.footer .container .item ul li{
+    margin: 10px 0;
+    
 }
 /* BACK TO TOP  */
 .backToTop{

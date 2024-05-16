@@ -53,3 +53,16 @@ navTabs.forEach((item) => {
     }
     })
 })
+
+// project
+document.getElementById("next").onclick = () => {
+    const widthItem = document.querySelector('.item').offsetWidth;
+    
+    document.getElementById("formList").scrollLeft += widthItem + 15 ;
+}
+
+document.getElementById("prev").onclick = () => {
+    const widthItem = document.querySelector(".item").offsetWidth;
+    document.getElementById("formList").scrollLeft -= widthItem + 15 ;
+
+}
