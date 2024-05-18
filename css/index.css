@@ -213,10 +213,11 @@ p{
 
 /* Projects */
 .projects{
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 70px 0 0 ;
 }
 
 
@@ -271,7 +272,8 @@ p{
 /* People */
 .people{
     margin-top: 100px;
-    height: 100vh;
+    height: auto;
+    padding: 70px 0;
     background-image: url(/img/b2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -346,10 +348,13 @@ p{
     border-color: var(--primary-color);
     color: var(--primary-color);
 }
+
+/* Build */
 .build {
-    height: 50vh;
-    margin-top: 100px;
+    height: auto;
+   
     text-align: center;
+    padding: 70px 0;
 }
 .build .container h1{
     font-size: 46px;
@@ -361,6 +366,11 @@ p{
 }
 
 /* footer */
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
 .footer .container .item h4{
     font-weight: bold;
     margin-bottom: 30px;
@@ -438,11 +448,26 @@ hr{
         display: flex;
         flex-direction: column;
     }
+   
     .sliderTab .navTabs .navItem{
         
         width: 100%;
     }
-    
+    .contentTabs .tab.active{
+        display: flex;
+        flex-direction: column-reverse;
+
+        align-items: start;
+        
+        width: 80%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    .contentTabs .tab.active .imgContent img{
+        
+        width: 100% !important;
+        
+    }
     .navbar .menu .navbar-nav{
         position: absolute;
         max-height: 0;
@@ -457,7 +482,11 @@ hr{
         
         /* border: 1px solid #000; */
     };
-
+    .footer .container {
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction: column;
+    }
     
 }
 
