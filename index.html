@@ -55,7 +55,7 @@
                 <li class="nav-item" >
                   <a class="nav-link" href="#" >Contact</a>
                 </li>
-                <div class="search d-flex justify-content-center align-items-center rounded-circle">
+                <div class="search d-flex justify-content-center align-items-center rounded-circle" id="btnSearch">
                   <i class="fa fa-search "></i>
                 </div>
                 <button class="btn-primary px-4 py-2 mb-2">schedule a demo</button>
@@ -71,8 +71,14 @@
                 <!-- <i class="fa fa-times"></i> -->
               </button>
             </div>
-          
       </nav>
+      <div class="overlay" id="overlay">
+          <span id="close">x</span>
+          <div class="content">
+            <input type="text" placeholder="Enter keyword">
+            <button>Search</button>
+          </div>
+      </div>
   </header>
 
     <!-- CAROUSEL  -->

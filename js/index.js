@@ -66,3 +66,11 @@ document.getElementById("prev").onclick = () => {
     document.getElementById("formList").scrollLeft -= widthItem + 15 ;
 
 }
+
+// search buuton
+document.getElementById("btnSearch").onclick = () => {
+    document.getElementById("overlay").style.display = "flex";
+}
+document.getElementById("close").onclick = () => {
+    document.getElementById('overlay').style.display = "none";
+}

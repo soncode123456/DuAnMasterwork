@@ -12,9 +12,17 @@ html,body{
     --text-color: #000;
     --bg-color-dark-theme: #131617;
     --bd-color: #fff;
-    --sub-color: #b7b7b7;
+    --sub-color: #aeadad;
+    --border-color: #fff;
 }
-
+body.dark{
+    
+    background-color: var(--bg-color-dark-theme);
+    --text-color: #FFF;
+    --bd-color: #131617;
+    --border-color: #333;
+  
+}
 #btn-dark{
     color: var(--text-color);
 }
@@ -37,8 +45,12 @@ html,body{
     text-transform: uppercase;
     cursor: pointer;
     background: transparent;
+    transition: 0.5s;
 }
-
+.btn-primary:hover{
+    color: #fff;
+    background-color: var(--primary-color);
+}
 /* Header */
 .header {
     position: fixed;
@@ -46,10 +58,11 @@ html,body{
     right: 0;
     left: 0;
     z-index: 1030;
-    width: 100vw;
+    /* width: 100vw; */
     height: 80px;
     /* position: relative; */
     background-color: var(--bd-color);
+    transition: 0.5s;
 }
 .header .navbar{
     width: 80%;
@@ -83,20 +96,14 @@ html,body{
 }
 .search{
     color: var(--text-color);
-    border: 1px solid var(--bd-color);
+    border: 1px solid var(--border-color);
     width: 40px;
     height: 40px;
     
     
 }
 
-body.dark{
-    
-    background-color: var(--bg-color-dark-theme);
-    --text-color: #FFF;
-    --bd-color: #131617;
-  
-}
+
 
 #btn-dark{
     color: var(--text-color);
@@ -106,6 +113,49 @@ body.dark{
     background-color: var(--primary-color);
     border-radius: 3px;
     border: none;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #00000089;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center  ;
+    
+}
+.overlay .content{
+    margin: 0 auto;
+    background-color: #fff;
+    height: max-content;
+    width: max-content;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.overlay span{
+    text-align: end;
+    width: 550px;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.overlay .content input{
+    border: none;
+    width: 500px;
+    height: 50px;
+    padding: 0 20px;
+}
+.overlay .content button{
+    height: 100%;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
 }
 /* general use  */
 .active{
@@ -165,7 +215,6 @@ p{
 /* Projects */
 .projects{
     height: 100vh;
-    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -471,6 +520,7 @@ hr{
         background-color: var(--bd-color);
         width: 100%;
         margin: 0 !important;
+        transition: 0.5s
         
         /* border: 1px solid #000; */
     };
