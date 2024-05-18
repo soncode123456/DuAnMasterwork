@@ -50,7 +50,41 @@ body.dark{
 .btn-primary:hover{
     color: #fff;
     background-color: var(--primary-color);
+    border: none;
+  
 }
+
+:root{
+    --primary-color: #dc4f72;
+    --text-color: #5a5a5a;
+    --bg-color-dark-theme: #131617;
+    --bd-color: #fff;
+}
+
+#btn-dark{
+    color: var(--text-color);
+}
+#btn-bars{
+    color: #fff;
+    background-color: var(--primary-color);
+    width: 30px;
+    border-radius: 3px;
+}
+/* general use  */
+.active{
+    color: var(--primary-color) !important;
+}
+.btn-primary{
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: transparent;
+}
+
 /* Header */
 .header {
     position: fixed;
@@ -62,6 +96,10 @@ body.dark{
     /* position: relative; */
     background-color: var(--bd-color);
     transition: 0.5s;
+    width: 100vw;
+    height: 80px;
+    /* position: relative; */
+    background-color: var(--bd-color);
 }
 .header .navbar{
     width: 80%;
@@ -103,6 +141,13 @@ body.dark{
 }
 
 
+body.dark{
+    
+    background-color: var(--bg-color-dark-theme);
+    --text-color: #FFF;
+    --bd-color: #131617;
+  
+}
 
 #btn-dark{
     color: var(--text-color);
@@ -236,6 +281,18 @@ p{
     padding: 0;
     
 }
+
+.heading h6{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.sliderTab .navTabs{
+    list-style: none;
+    color: var(--text-color);
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
 .sliderTab .navTabs .navItem{
     /* cursor: pointer;
     margin: 0 auto; */
@@ -262,6 +319,8 @@ p{
 .contentTabs .tab h3{
     color: var(--text-color);
 }
+
+
 
 
 .contentTabs .tab.active{
@@ -395,6 +454,75 @@ hr{
 .info .container{
     color: var(--text-color);
 }
+.people .direction{
+    text-align: center;
+}
+.people .direction button{
+    font-weight: bold;
+    background-color: #00000044;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    color: #ffffff;
+    margin: 0 10px;
+}
+.people .direction button:hover{
+    background-color: #000000;
+}
+
+
+.item {
+    border-radius: 15px;
+    width: 300px;
+    height: 500px;
+    background-image: linear-gradient(to top,#aec0ce,#ececf2);
+    overflow: hidden;
+    margin: 10px;
+}
+.item .avatar{
+    display: block;
+    margin: 50px auto 10px;
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px #7d878d;
+
+
+}
+.item .content{
+    padding: 30px;
+
+}
+.item .content table td{
+    padding: 10px 0;
+    border-bottom: 1px solid #aec0ce;
+
+    
+}
+.item .content table td:nth-child(2){
+    text-align: right;
+
+}
+.nameGroup{
+    text-align: center;
+    bottom: none !important;
+}
+
+#list{
+    display: flex;
+    width: max-content;
+}
+#formList{
+    width: 1200px;
+    max-width: 100%;
+    overflow: auto;
+}
+#formList::-webkit-scrollbar{
+    display: none;
+}
 /* BACK TO TOP  */
 .backToTop{
     width: 50px;
@@ -428,6 +556,80 @@ hr{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PROJECT */
+/* .navTabs{
+    background: linear-gradient(to bottom right, #25aebb,#0ddb9f);
+    padding: 0;
+    margin: 50px 0 0;
+    list-style: none;
+    display: flex;
+    max-width: fit-content;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1  ;
+}
+.navTabs .navItem{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    width: 80px;
+    text-align: center;
+    border-right: 1px solid;
+    transition: .5s;
+    cursor: pointer;
+}
+.navTabs .navItem:nth-last-child(1){
+    border-right: none;
+}
+
+.navTabs .nav-item.active{
+    color: #555;
+}
+.bg-active{
+    background-color: #eee;
+    padding: 20px;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.contentTabs{
+    padding: 30px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    min-height: 300px;
+    text-align: justify;
+}
+.contentTabs .tab{
+    display: none;
+}
+.contentTabs .tab.active{
+    display: block;
+} */
+
+
 /* Reponsive */
 @media (max-width:992px){
     .header .navbar{
@@ -441,6 +643,7 @@ hr{
     .sliderTab .navTabs .navItem{
        border-radius: 1px solid #000;
     
+       
     }
     
     .navbar .menu .navbar-nav{
@@ -458,6 +661,9 @@ hr{
         /* border: 1px solid #000; */
     };
 
+    
+        
+       
     
 }
 

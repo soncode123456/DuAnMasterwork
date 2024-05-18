@@ -1,38 +1,92 @@
-/* MOON AND SUN  */
-/* Light theme */
-#myBody {
-    background-color: white;
-  }
-  #switchButton {
-    background-color: white;
-    /* border: 1px solid black; */
-    font-size: 26px;
-  }
-  #switchButton .fa-sun {
-    display: none;
-  }
-  #switchButton .fa-moon {
-    display: block;
-  }
-  
-  /* Dark Theme*/
-  .dark#myBody {
-    background-color: black;
-  }
-  .dark #switchButton {
-    background-color: black;
-    border: 1px solid white;
-  }
-  .dark #switchButton .fa-sun {
-    display: block;
-    color: white;
-  }
-  
-  .dark #switchButton .fa-moon {
-    display: none;
-  }
-  .dark .card {
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-  } 
+/* CAROUSEL */
+#bodyElement.dark #carousel .content{
+    background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.92)), url(../img/banner.jpg);
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 80px;
+}
+#bodyElement.dark #carousel .carousel_left h3{
+    color: #eee;
+}
+#bodyElement.dark #carousel .carousel_left p{
+    color: #b7b7b7;
+}
+
+/* TOOLS */
+#bodyElement.dark #tool .tools_top h3{
+    color: #eee;
+}
+#bodyElement.dark #tool .tools_top p{
+    color: #b7b7b7;
+}
+
+#bodyElement.dark #tool .tools_bottom .tools_item{
+    background: #191c1d;
+    border: 1px solid #191c1d;
+}
+#bodyElement.dark #tool .tools_bottom .tools_item:hover{
+    background: #131617;
+    border: 1px solid #333;
+}
+#bodyElement.dark #tool .tools_bottom .tools_item h3{
+    color: #eee;
+}
+#bodyElement.dark #tool .tools_bottom .tools_item p{
+    color: #b7b7b7;
+}
+
+/* COMPANY */
+#bodyElement.dark #company{
+    background: #191c1d;
+}
+#bodyElement.dark #company .company_left h3{
+    color: #eee;
+}
+#bodyElement.dark #company .company_left p{
+    color: #b7b7b7;
+}
+
+/* NUMBER */
+#bodyElement.dark #number{
+    background: #191c1d;
+}
+#bodyElement.dark #number .number_content .number_item{
+    background: #131617;
+    border: 1px solid #333;
+}
+#bodyElement.dark #number .number_item h4{
+    color: #eee;
+}
+#bodyElement.dark #number .number_item .number_txt{
+    color: #b7b7b7;
+}
+
+/* GENERAL */
+#bodyElement.dark #General{
+    background: #191c1d;
+}
+#bodyElement.dark #General .general_title h3{
+    color: #eee;
+}
+#bodyElement.dark #General .general_title p{
+    color: #b7b7b7;
+}
+
+#bodyElement.dark #General .general_item ul li{
+    background-color: #131617;
+    border-color: #333;
+}
+#bodyElement.dark #General .general_item ul li h2{
+    color: #eee;
+}
+#bodyElement.dark #General .general_item ul li i::before,#bodyElement.dark #General .general_item ul li i::after {
+    background-color: #eee;
+}
+#bodyElement.dark #General .general_item ul li p{
+    color: #b7b7b7;
+}

@@ -131,6 +131,8 @@ input[type="checkbox"] {
     transform: translateY(-8px);
 }
 .tools_bottom .tools_item h3{
+    font-size: 26px;
+    font-weight: 700;
     line-height: 35px;
     color: #2c3038;
 }
@@ -184,6 +186,8 @@ input[type="checkbox"] {
     transition: all .5s;
 }
 .number_item h4{
+    font-size: 16px;
+    font-weight: 700;
     color: #2C3038;
     line-height: 24px;    
 }
@@ -227,7 +231,7 @@ input[type="checkbox"] {
 .General{
     background-color: #F7F9FC;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .general_title{
     max-width: 750px;
@@ -247,7 +251,8 @@ input[type="checkbox"] {
     color: #2C3038;
 }
 
-.general_img{
+.General .general_img{
+    position: -webkit-sticky;
     position: sticky;
     top: 80px;
 }
@@ -422,22 +427,55 @@ input[type="checkbox"] {
 
 /* RESPONSIVE */
 
+@media screen and (max-width: 992px){
+    /* CAROUSEL  */
+    .carousel{
+        margin-top: 70px;
+    }
+
+    /* NUMBER  */
+    .number_item h4{
+        font-size: 18px;
+    }
+    .number_item p.counter{
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
 @media screen and (max-width:800px){
     /* TOOLS  */
     .tools_top h3{
         font-size: 40px;
         line-height: 50px;
-    };  
-    
-}
-@media screen and (max-width:800px){
-    /* GENERAL */
+    }
+
+    /* GENERAL  */
     .general_title h3{
         font-size: 40px;
         line-height: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    /* CAROUSEL */
+    #bodyElement .theme_button {
+        line-height: 44px;
+        padding: 0px 20px;
+    };
+
+}
+
+@media screen and (max-width:737px){
+    /* NUMBER */
+    .number_item h4{
+        font-size: 17px;
     };
 }
+
 @media screen and (max-width:667px){
+    
     /* TOOLS  */
     .tools_top h3{
         font-size: 32px;
@@ -452,34 +490,20 @@ input[type="checkbox"] {
     };
 }
 
+@media screen and (min-width:414px){
+    .container{
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    };
+}
+
 @media screen and (max-width:568px){
     /* CAROUSEL  */
     .carousel_left h3{
         font-size: 40px;
         line-height: 45px;
-    }
+    };
 
-}
-@media screen and (max-width:414px){
-    
-}
-
-@media screen and (max-width:376px){
-    
-}
-
-@media screen and (max-width:320px){
-    
-}
-
-@media screen and (min-width:768px) and (max-width:992px) {
-    
-}
-
-@media screen and (min-width:575px) and (max-width:992px) {
-    
-}
-
-@media screen and (min-width:991.98px) and (max-width:1299.98px){
-    
 }

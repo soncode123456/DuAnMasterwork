@@ -74,3 +74,4 @@ document.getElementById("btnSearch").onclick = () => {
 document.getElementById("close").onclick = () => {
     document.getElementById('overlay').style.display = "none";
 }
+})
