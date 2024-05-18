@@ -396,6 +396,7 @@ input[type="checkbox"] {
     width: 50px;
     height: 45px;
     background: #dc4f72c4;
+    border-radius: 3px;
     border: none;
     outline: none;
     line-height: 50px;
@@ -417,7 +418,7 @@ input[type="checkbox"] {
     transition: all .3s;
 }
 .cd-top--is-visible { 
-    /* // back-to-top button visible */
+    // back-to-top button visible
     visibility: visible;
     opacity: 1;
 }
