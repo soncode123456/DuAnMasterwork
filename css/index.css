@@ -315,7 +315,7 @@ p{
 
 }
 #formList #list .item{
-    width: 580px;
+    width: 560px;
     display: flex;
     background-color: var(--bd-color);
     padding: 30px;
@@ -440,9 +440,22 @@ hr{
 
 /* Reponsive */
 @media (max-width:992px){
+    #formList #list .item{
+        width: 450px;
+
+    }
+    .footer .container {
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction: column;
+    }
     .header .navbar{
         width: 100%;
        padding: 0 20px;
+    }
+    .sliderTab{
+        display: flex;
+        /* flex-direction: column; */
     }
     .sliderTab .navTabs{
         display: flex;
@@ -482,11 +495,8 @@ hr{
         
         /* border: 1px solid #000; */
     };
-    .footer .container {
-        display: flex;
-        /* justify-content: space-between; */
-        flex-direction: column;
-    }
+    
+   
     
 }
 
