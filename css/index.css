@@ -274,7 +274,7 @@ p{
     margin-top: 100px;
     height: auto;
     padding: 70px 0;
-    background-image: url(/img/b2.jpg);
+    background-image: linear-gradient(to right ,var(--bd-color),#ffffffea), url(/img/b2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
